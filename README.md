@@ -1,7 +1,8 @@
 #Exercícios feitos  do curso sobre Javascript e TypeScript - front-end e back-end (Full Stack) - Node, Express, noSQL, React, hooks, Redux, Design Patterns.
 
-## JavaScript Básico, Funcional e Orientado a Objetos (ES6+, front-end e back-end)
-TypeScript - um superset do JavaScript com tipagem estática (front-end e back-end)
+## JavaScript Básico, Funcional e Orientado a Objetos (ES6+, front-end e back-end) 
+##TypeScript - um superset do JavaScript com tipagem estática (front-end e back-end)
+
 Node, Express, MongoDB e MySQL/MariaDB (Back-end)
 Webpack e Babel (Front-end)
 Sistema de login com session (front-end e back-end)
@@ -22,4 +23,4 @@ NestJS + Strapi + PostgreSQL (com CSR, SSR, SSG e ISR)
 HTML5 e CSS3 (Bônus Extra)
 
 
-curso ministrado pelo professor [Luiz Otávio Miranda](https://www.udemy.com/user/luiz-otavio-miranda/)
+curso ministrado pelo professor [Luiz Otávio Miranda](https://www.udemy.com/user/luiz-otavio-miranda/) via [UDEMY](https://www.udemy.com/)
