@@ -2,7 +2,7 @@
 
 ## JavaScript Básico, Funcional e Orientado a Objetos (ES6+, front-end e back-end) | TypeScript - um superset do JavaScript com tipagem estática (front-end e back-end)
 
-Node, Express, MongoDB e MySQL/MariaDB (Back-end)
+Node, Express, MongoDB e MySQL/MariaDB (Back-end)<br/>
 Webpack e Babel (Front-end)
 Sistema de login com session (front-end e back-end)
 Sistema de login com JWT (front-end e back-end)
