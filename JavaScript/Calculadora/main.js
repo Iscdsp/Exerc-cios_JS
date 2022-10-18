@@ -2,24 +2,56 @@ function criaCalculadora() {
   return {
     //atributos do objeto
     display: document.querySelector(".display"),
-
+    btnClear: document.querySelector(".btn-clear"),
     //métodos do objeto
 
     get inicia() {
       this.cliqueBotoes();
+      this.pressionaEnter();
     },
 
-    cliqueBotoes() {
-      document.addEventListener(
-        "click",
-        function (e) {
-          const el = e.target;
+    pressionaEnter() {
+      this.display.addEventListener("keyup", (e) => {
+        if (e.keyCode === 13) {
+          this.realizaConta();
+        }
+      });
+    },
 
-          if (el.classList.contains("btn-num")) {
-            this.btnParaDisplay(el.innerText);
-          }
-        }.bind(this)
-      );
+    realizaConta() {
+      let conta = this.display.value;
+
+      try {
+        conta = eval(conta);
+
+        if (!conta) {
+          alert("conta inválida");
+          return;
+        }
+
+        this.display.value = conta;
+      } catch (e) {
+        alert("conta inválida");
+      }
+    },
+    cliqueBotoes() {
+      document.addEventListener("click", (e) => {
+        const el = e.target;
+
+        if (el.classList.contains("btn-num")) {
+          this.btnParaDisplay(el.innerText);
+        }
+
+        if (el.classList.contains("btn-clear")) {
+          this.display.value = " ";
+        }
+        if (el.classList.contains("btn-del")) {
+          this.display.value = this.display.value.slice(0, -1);
+        }
+        if (el.classList.contains("btn-eq")) {
+          this.realizaConta();
+        }
+      });
     },
 
     btnParaDisplay(valor) {
